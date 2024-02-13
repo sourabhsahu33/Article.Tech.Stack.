@@ -206,6 +206,9 @@ tbody tr.hide td img {
   color: white;
   border-radius: 0.5rem;
 }
+.status.delivered :hover{
+  background-color: black;
+}
 
 .status.cancelled {
   background-color: #d893a3;
