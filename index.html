@@ -1,0 +1,467 @@
+<!-- 
+Responsive HTML Table With Pure CSS - Web Design/UI Design
+
+Code written by:
+👨🏻‍⚕️ Coding Design (Jeet Saru)
+
+> You can do whatever you want with the code. However if you love my content, you can **SUBSCRIBED** my YouTube Channel.
+
+🌎link: www.youtube.com/codingdesign 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Article | GeeksforGeeks</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <main class="table" id="customers_table">
+      <section class="table__header">
+        <h1>GFG Articles by Sourabh</h1>
+        <div class="input-group">
+          <input type="search" placeholder="Search Data..." />
+          <img src="images/search.png" alt="" />
+        </div>
+        <!-- <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                </div>
+            </div> -->
+      </section>
+      <section class="table__body">
+        <table>
+          <thead>
+            <tr>
+              <th>Articles Name <span class="icon-arrow">&UpArrow;</span></th>
+              <th>Technology <span class="icon-arrow">&UpArrow;</span></th>
+              <th>Publication <span class="icon-arrow">&UpArrow;</span></th>
+              <th>Status <span class="icon-arrow">&UpArrow;</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="https://i.ibb.co/Y7x6C2V/json.png" alt="" /> Filtering
+                Json Response With Python List Comprehension
+              </td>
+              <td>Python, JSON</td>
+              <td>17 Dec, 2022</td>
+              <td>
+                <p class="status delivered">
+                  <button type="submit">Read!</button>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/mysql.png" alt="" /> How to Convert Rows into
+                Columns in MySQL?
+              </td>
+              <td>MySQL</td>
+              <td>27 Aug, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/how-to-convert-rows-into-columns-in-mysql"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/django.png" alt="" /> Portfolio Showcase using
+                Django
+              </td>
+              <td>Django</td>
+              <td>12 Feb, 2024</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/portfolio-showcase-using-django/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img
+                  src="https://i.ibb.co/1bkN6zS/267-Python-512.webp"
+                  alt=""
+                />
+                How to Convert Rows into Columns in MySQL?
+              </td>
+              <td>MySQL</td>
+              <td>27 Aug, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/how-to-convert-rows-into-columns-in-mysql"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/Python.webp" alt="" /> Python Falcon - API
+                Testing
+              </td>
+              <td>Python</td>
+              <td>09 Feb, 2024</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/python-falcon-api-testing/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/wire.png" alt="" /> SCCP Users Table in
+                Wireshark
+              </td>
+              <td>Wireshark</td>
+              <td>30 Nov, 2022</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/sccp-users-table-in-wireshark/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/Matlab.png" alt="" />What Color Histogram
+                Equalization in MATLAB?
+              </td>
+              <td>MATLAB</td>
+              <td>07 Jan, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/what-color-histogram-equalization-in-matlab/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/kali.png" alt="" /> Interface (NICs) Bonding in
+                Linux using nmcli
+              </td>
+              <td>Linux-Unix, Kali</td>
+              <td>30 Jan, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/interface-nics-bonding-in-linux-using-nmcli/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/Matlab.png" alt="" />Fuzzy C-means Clustering
+                in MATLAB
+              </td>
+              <td>MATLAB</td>
+              <td>31 Jan, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/fuzzy-c-means-clustering-in-matlab/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/flask.png" alt="" />GET Request Query
+                Parameters with Flask
+              </td>
+              <td>Python-Flask</td>
+              <td>13 Feb, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/get-request-query-parameters-with-flask/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/Matlab.png" alt="" /> MATLAB: Connected
+                Component Labeling without Using bwlabel or bwconncomp Functions
+              </td>
+              <td>MATLAB</td>
+              <td>08 Feb, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/matlab-connected-component-labeling-without-using-bwlabel-or-bwconncomp-functions/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/cps.png" alt="" />Introduction to
+                Cyber-Physical System
+              </td>
+              <td>Cyber-Physical System</td>
+              <td>27 Aug, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/introduction-to-cyber-physical-system/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/wire.png" alt="" />IP Filtering in Wireshark
+              </td>
+              <td>Wireshark, Ip</td>
+              <td>06 Mar, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/ip-filtering-in-wireshark/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/css.png" alt="" />How to Align Images Side By
+                Side using CSS ?
+              </td>
+              <td>CSS-Properties</td>
+              <td>05 Apr, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/how-to-align-images-side-by-side-using-css/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/cps.png" alt="" />Difference Between
+                Cyber-Physical System(CPS) and Internet of Things(IoT)
+              </td>
+              <td>Cyber-Physical-System</td>
+              <td>08 Apr, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/difference-between-cyber-physical-systemcps-and-internet-of-thingsiot/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/Linux.png" alt="" />How to install Sentora in
+                Linux
+              </td>
+              <td>Linux-Unix</td>
+              <td>11 Apr, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/how-to-install-sentora-in-linux/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/html5.png" alt="" />What is the meaning
+                `HTMLDivElement`?
+              </td>
+              <td>HTML5-Properties</td>
+              <td>17 Jul, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/what-is-the-meaning-htmldivelement/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/os.png" alt="" />What is Demand Paging in
+                Operating System?
+              </td>
+              <td>Operating-System, Paging</td>
+              <td>21 Dec, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/what-is-demand-paging-in-operating-system/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="images/Python.webp" alt="" />3 Level Nested Dictionary
+                To Multiindex Pandas Dataframe
+              </td>
+              <td>Python Program</td>
+              <td>23 Jan, 2024</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/3-level-nested-dictionary-to-multiindex-pandas-dataframe/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/kali.png" alt="" />Force netcat to send
+                messages immediately (without buffering) in Linux
+              </td>
+              <td>netcat, Kali</td>
+              <td>01 Feb, 2024</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/force-netcat-to-send-messages-immediately-without-buffering-in-linux/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/os.png" alt="" />Kernel Level Threads in
+                Operating System
+              </td>
+              <td>Operating-System</td>
+              <td>27 Apr, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/kernel-level-threads-in-operating-system/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/Linux.png" alt="" />Interface (NICs) Bonding in
+                Linux using nmcli
+              </td>
+              <td>Linux-Unix, NICs</td>
+              <td>30 Jan, 2023</td>
+              <td>
+                <p class="status delivered">
+                  <a
+                    href="https://www.geeksforgeeks.org/interface-nics-bonding-in-linux-using-nmcli/"
+                    target="_blank"
+                  >
+                    <button type="submit">Read!</button>
+                  </a>
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
